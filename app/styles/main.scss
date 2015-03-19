@@ -167,7 +167,7 @@ body > header {
   max-width: $max-width-desktop;
   article {
     position: relative;
-    height: 791px;
+    height: 760px;
 
     header, footer {
       width: 100%;
@@ -260,13 +260,22 @@ body > header {
         text-align: center;
         bottom: 30px; 
 
-        .readMoreButton{
+        button{
           border: 2px solid $primary-color;
           margin-top: 20px;
 	  font-size: 14px;
           height: 47px;
+	  width: 167px;
+  	  border-radius: 6px;
+	  background: white;
+	  text-transform: uppercase;
+	  font-weight: bold;
+ 	  color: $primary-color;
+  	  @include transition(all, 0.25s, ease);
 	}
-        .readMoreButton:hover{
+        button:hover{
+          color: $primary-color;
+          cursor: pointer;
           background: rgba(88,171,76,0.3);	
 	}
 

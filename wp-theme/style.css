@@ -1,0 +1,412 @@
+/*Theme Name: Evermade Sample
+Theme URI: esample
+Description: A sample responsive theme
+Version: 1.0 
+Author: Diego Lopez
+Author URI: diegolopezreyes.com
+*/
+body {
+  background: #fff;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+input, select {
+  font-family: inherit; }
+
+p {
+  margin: 5px 0;
+  line-height: 25px; }
+
+h1, h2, h3 {
+  letter-spacing: 1px; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .5s ease; }
+
+.imageLayer {
+  position: absolute;
+  z-index: -3;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 928px; }
+
+.opaqueLayer {
+  position: absolute;
+  z-index: -2;
+  background: #000;
+  opacity: .23;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 928px; }
+
+.headerGradient {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 209px;
+  /*Safari 5.1-6*/
+  /*Opera 11.1-12*/
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+  /*Standard*/ }
+
+body > header {
+  position: relative;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  height: 128px; }
+  body > header .logo {
+    font-size: 24px;
+    float: none;
+    height: 128px; }
+    body > header .logo .middle {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    body > header .logo img {
+      vertical-align: middle;
+      max-height: 126px;
+      max-width: 960px; }
+  body > header nav {
+    position: relative;
+    float: right;
+    color: #fff;
+    line-height: 90px;
+    text-transform: uppercase; }
+    body > header nav ul {
+      list-style: none;
+      float: left; }
+      body > header nav ul li {
+        font-weight: bold;
+        display: block;
+        float: left;
+        padding: 3px 21px; }
+      body > header nav ul li.current a {
+        border-bottom: 4px solid #70df88;
+        padding-bottom: 4px; }
+      body > header nav ul li a {
+        transition: all 0.25s ease; }
+      body > header nav ul li {
+        transition: all 0.4s ease; }
+      body > header nav ul li a:hover {
+        color: #d9d9d9; }
+  body > header .btnShowMenu {
+    display: none;
+    float: right;
+    height: 48px;
+    width: 48px;
+    background: url("images/showResponsiveMenu.png");
+    background-size: 100% auto;
+    margin: 40px 16px 40px 24px;
+    border-radius: 6px;
+    border: 2px solid white; }
+  body > header .btnShowMenu:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer; }
+  body > header .btnShowMenu.selected {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.banner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px; }
+  .banner article {
+    position: relative;
+    height: 760px; }
+    .banner article header, .banner article footer {
+      width: 100%;
+      text-align: center;
+      position: absolute; }
+    .banner article header {
+      top: 291px; }
+      .banner article header h1 {
+        text-shadow: 1px 1px #afafaf;
+        font-size: 26px;
+        margin: 0; }
+      .banner article header h2 {
+        text-shadow: 1px 1px #afafaf;
+        font-size: 54px;
+        height: auto;
+        margin: 0; }
+    .banner article footer {
+      bottom: 100px; }
+
+.readMoreButton {
+  width: 167px;
+  height: 50px;
+  border-radius: 6px;
+  border: 2px solid white;
+  background: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #57ab4a;
+  transition: all 0.25s ease; }
+
+.readMoreButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #57ab4a;
+  cursor: pointer; }
+
+.teaserSections {
+  background: white;
+  color: black;
+  heigth: 100%; }
+  .teaserSections .section1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 1140px;
+    text-align: center; }
+    .teaserSections .section1 header {
+      padding: 100px 0 80px 0; }
+      .teaserSections .section1 header h1 {
+        font-size: 42px;
+        color: #4b4845;
+        margin: 0; }
+      .teaserSections .section1 header h2 {
+        font-size: 20px;
+        font-weight: normal;
+        color: #afafaf;
+        padding-top: 8px;
+        margin: 0; }
+    .teaserSections .section1 article {
+      position: relative;
+      text-align: center;
+      float: left;
+      width: 362px;
+      min-height: 500px;
+      color: #4b4845;
+      margin-bottom: 120px; }
+      .teaserSections .section1 article footer {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 30px; }
+        .teaserSections .section1 article footer button {
+          border: 2px solid #57ab4a;
+          margin-top: 20px;
+          font-size: 14px;
+          height: 47px;
+          width: 167px;
+          border-radius: 6px;
+          background: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #57ab4a;
+          transition: all 0.25s ease; }
+        .teaserSections .section1 article footer button:hover {
+          color: #57ab4a;
+          cursor: pointer;
+          background: rgba(88, 171, 76, 0.3); }
+    .teaserSections .section1 article + article {
+      margin-left: 27px; }
+
+body > footer {
+  clear: both;
+  height: 234px;
+  position: relative;
+  text-align: center; }
+  body > footer p {
+    margin-top: 0;
+    padding-top: 70px;
+    padding-bottom: 28px;
+    font-weight: bold; }
+  body > footer .form .btnCountry {
+    text-align: center;
+    font-size: 14px;
+    width: 262px;
+    height: 49px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #57ab4a;
+    margin-right: 27px;
+    transition: all 0.25s ease; }
+  body > footer .form .btnCountry:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer; }
+  body > footer .form input[type="email"] {
+    text-align: left;
+    font-size: 16px;
+    width: 328px;
+    height: 46px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid white;
+    background: white;
+    padding: 0 0 0 10px;
+    margin-right: 0px;
+    transition: all 0.25s ease; }
+  body > footer .form .btnSuscribe {
+    text-align: center;
+    font-size: 14px;
+    width: 130px;
+    height: 49px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid transparent;
+    background: #58ac4c;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin-left: -5px;
+    transition: all 0.25s ease; }
+  body > footer .form .btnSuscribe:hover {
+    border: 1px solid white;
+    background: #c5c3c0;
+    cursor: pointer; }
+  body > footer .footerImageLayer {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -4;
+    background-position: center top;
+    background-repeat: no-repeat; }
+  body > footer .footerOpaqueLayer {
+    position: absolute;
+    z-index: -2;
+    background: #000;
+    opacity: .23;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+/* Tablets ----------- */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .banner {
+    max-width: 600px; }
+    .banner article {
+      height: 680px; }
+      .banner article header {
+        top: 130px; }
+      .banner article footer {
+        bottom: 200px; }
+
+  .teaserSections .section1 {
+    max-width: 600px; }
+    .teaserSections .section1 article {
+      clear: both;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      width: 100%; }
+      .teaserSections .section1 article .content, .teaserSections .section1 article footer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 362px; }
+    .teaserSections .section1 article + article {
+      margin-left: auto; }
+
+  body > footer p {
+    padding-top: 35px;
+    padding-bottom: 20px; }
+  body > footer .form .btnCountry, body > footer .form input[type="email"], body > footer .form .btnSuscribe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    padding: 0;
+    width: auto;
+    height: 35px;
+    min-width: 318px;
+    max-width: 480px; }
+  body > footer .form input[type="email"], body > footer .form .btnSuscribe {
+    border-radius: 6px;
+    text-align: center; } }
+@media only screen and (max-width: 768px) {
+  body > header {
+    overflow: visible; }
+    body > header nav {
+      display: none;
+      position: absolute;
+      z-index: 3;
+      top: 90px;
+      right: 0px;
+      left: 0px; }
+      body > header nav ul {
+        width: 100%;
+        background: rgba(75, 72, 69, 0.95);
+        list-style: none;
+        float: left;
+        padding: 0; }
+        body > header nav ul li {
+          text-align: center;
+          width: 100%;
+          height: 90px;
+          font-weight: bold;
+          font-size: 20px;
+          float: none;
+          padding: 0;
+          border-bottom: 2px solid #afafaf; }
+        body > header nav ul li a {
+          display: block;
+          position: relative;
+          width: inherit; }
+        body > header nav ul li.current a {
+          color: #70df88;
+          border-bottom: none;
+          padding: 0; }
+        body > header nav ul li:hover {
+          background: rgba(0, 0, 0, 0.35); }
+    body > header .btnShowMenu {
+      position: relative;
+      z-index: 4;
+      display: block; }
+
+  .footerImageLayer {
+    background-position: right top; } }
+/* Medium Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+  .banner {
+    max-width: 768px; }
+    .banner article {
+      height: 680px; }
+      .banner article header {
+        top: 191px; }
+
+  .teaserSections .section1 {
+    max-width: 768px; }
+    .teaserSections .section1 article {
+      margin-bottom: 0px; }
+    .teaserSections .section1 article:nth-of-type(3) {
+      clear: both;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 120px;
+      width: 100%; }
+      .teaserSections .section1 article:nth-of-type(3) .content, .teaserSections .section1 article:nth-of-type(3) footer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 362px; }
+
+  body > footer .form .btnCountry {
+    width: 222px; }
+  body > footer .form input[type="email"] {
+    width: 218px; }
+  body > footer .form .btnSuscribe {
+    width: 100px; } }
