@@ -148,11 +148,16 @@
     .section1 {
       max-width: $max-width-med-desktop;
 
+      article {
+	margin-bottom: 0px;
+      }
+
       article:nth-of-type(3){
         clear: both;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
+        margin-bottom: 120px;
         width: 100%;
       
         .content, footer {

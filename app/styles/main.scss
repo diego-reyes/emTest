@@ -177,16 +177,18 @@ body > header {
 
     header {
       top: 291px;
-	    h1 {
-	      font-size: 26px;
-	      margin:0;
-	    }
+	h1 {
+	  text-shadow: 1px 1px #afafaf;
+	  font-size: 26px;
+	  margin:0;
+	}
 	    
-	    h2 {
-	      font-size: 54px;
-	      height: auto;
-	      margin:0;
-	    }
+        h2 {
+	  text-shadow: 1px 1px #afafaf;
+	  font-size: 54px;
+	  height: auto;
+	  margin:0;
+        }
     }
 
     footer {
@@ -211,7 +213,7 @@ body > header {
 
 .readMoreButton:hover{
   background: rgba(255,255,255,0.3);
-  color: white;
+  color: $primary-color;
   cursor: pointer;
 }
 
@@ -249,13 +251,25 @@ body > header {
       float: left;
       width: 362px;
       min-height: 500px;
-      color: #4b4845;	
+      color: #4b4845;
+      margin-bottom: 120px;	
       
       footer {
         position: absolute;
         width: 100%;
         text-align: center;
         bottom: 30px; 
+
+        .readMoreButton{
+          border: 2px solid $primary-color;
+          margin-top: 20px;
+	  font-size: 14px;
+          height: 47px;
+	}
+        .readMoreButton:hover{
+          background: rgba(88,171,76,0.3);	
+	}
+
       }
     }
     article + article {
@@ -264,16 +278,6 @@ body > header {
 
   }
 
-  .readMoreAnchor {
-    font-size: 14px;
-    padding-top: 40px;
-    color: $primary-color;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .readMoreAnchor:hover {
-    color: lighten($primary-color,15%);
-  }
 }
 
 
@@ -334,7 +338,7 @@ body > footer {
       height: 49px;
       border-radius: 0 6px 6px 0;
       border: 1px solid transparent;
-      background: #eae9e8;
+      background: #58ac4c;
       text-transform: uppercase;
       font-weight: bold;
       color: white;
